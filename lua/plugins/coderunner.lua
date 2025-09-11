@@ -32,10 +32,10 @@ return {
       },
       filetype = {
         cpp = {
-          "cd $dir && cl /utf-8 /nologo /EHsc /O2 /std:c++latest $fileName /Fe:$fileNameWithoutExt.exe && $fileNameWithoutExt.exe",
+          "cd $dir && cl /utf-8 /nologo /EHsc /O2 /std:c++latest /Zc:__cplusplus $fileName /Fe:$fileNameWithoutExt.exe && $fileNameWithoutExt.exe",
         },
         c = {
-          "cd $dir && cl /utf-8/nologo /EHsc /O2 /std:c++latest $fileName && $fileNameWithoutExt.exe",
+          "cd $dir && cl /utf-8 /nologo /O2 $fileName /Fe:$fileNameWithoutExt.exe && $fileNameWithoutExt.exe",
 
         },
         python = {
