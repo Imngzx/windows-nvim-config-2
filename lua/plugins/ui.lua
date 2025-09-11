@@ -208,7 +208,7 @@ return {
         enabled = true,
         animate = {
           duration = { step = 15, total = 150 },
-          easing = "inCubic",
+          easing = "linear",
           fps = 240,
         },
         animate_repeat = {

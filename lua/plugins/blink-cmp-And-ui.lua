@@ -1,7 +1,7 @@
 return {
   {
     "saghen/blink.cmp",
-    event = "LazyFile",
+    event = "InsertEnter",
     dependencies = {
       "rapan931/colorful-menu.nvim",
     },
@@ -35,6 +35,7 @@ return {
   },
   {
     "xzbdmw/colorful-menu.nvim",
+    event = "InsertEnter",
     config = function()
       -- You don't need to set these options.
       require("colorful-menu").setup({
