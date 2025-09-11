@@ -1,32 +1,23 @@
 return {
 
-  -- {
-  --   "catppuccin/nvim",
-  --   name = "catppuccin",
-  --   flavour = "mocha",
-  --   transparent_background = false,
-  --   term_colors = true,
-  -- }
-
-
   {
     "catppuccin/nvim",
-    name = "catppuccin",
     lazy = true,
+    name = "catppuccin",
     opts = {
-      flavor = "auto",
-      background = {
-        light = "latte",
-        dark = "mocha",
+      flavour = "mocha", -- latte, frappe, macchiato, mocha
+      integrations = {
+        treesitter = true,
+        bufferline = true,
+        cmp = true,
+        lsp_saga = true,
       },
-      -- integrations = {
-      --   -- -- lualine = true,
-      --   -- "lualine",
-      --   -- "blink_cmp"
-      -- },
     },
+    -- config = function(_, opts)
+    --   require("catppuccin").setup(opts)
+    --   vim.cmd.colorscheme("catppuccin")
+    -- end,
   },
-
 
 
   -- NOTE: Rose pine

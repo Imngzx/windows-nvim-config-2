@@ -83,7 +83,7 @@ return {
             settings = {
               Lua = {
                 workspace = {
-                  checkThirdParty = false,
+                  checkThirdParty = true,
                 },
                 codeLens = {
                   enable = true,

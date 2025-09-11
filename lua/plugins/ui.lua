@@ -174,6 +174,7 @@ return {
   {
     "folke/snacks.nvim",
     event = "VimEnter",
+    ---@module "snacks"
     ---@type snacks.Config
     opts = {
 
