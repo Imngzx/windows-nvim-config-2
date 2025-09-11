@@ -32,6 +32,9 @@ return {
         "ruff",
         "cmakelang",
         "cmakelint",
+        "cpptools",
+        "codespell",
+        "taplo",
       },
     },
 

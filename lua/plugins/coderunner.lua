@@ -1,4 +1,4 @@
-_G.RUNNER_FLOAT_MODE = false --NOTE: toggle here to switch between float or newtab mode
+_G.RUNNER_FLOAT_MODE = true --NOTE: toggle here to switch between float or newtab mode
 
 -- helper function to get mode
 local function get_mode()
@@ -31,11 +31,12 @@ return {
         blend = 0,
       },
       filetype = {
-        c = {
-          "cd $dir && cl /nologo /EHsc /O2 $fileName && $fileNameWithoutExt.exe",
-        },
         cpp = {
-          "cd $dir && cl /nologo /EHsc /O2 /std:c++latest $fileName && $fileNameWithoutExt.exe",
+          "cd $dir && cl /utf-8 /nologo /EHsc /O2 /std:c++latest $fileName /Fe:$fileNameWithoutExt.exe && $fileNameWithoutExt.exe",
+        },
+        c = {
+          "cd $dir && cl /utf-8/nologo /EHsc /O2 /std:c++latest $fileName && $fileNameWithoutExt.exe",
+
         },
         python = {
           "cd $dir &&",

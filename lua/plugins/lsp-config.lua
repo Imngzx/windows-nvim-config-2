@@ -14,6 +14,10 @@ return {
         diagnostics = {
           underline = true,
           update_in_insert = false,
+          -- virtual_lines = {
+          --   enabled = false,
+          -- },
+
           -- virtual_text = {
           --   spacing = 3,
           --   source = "if_many",
