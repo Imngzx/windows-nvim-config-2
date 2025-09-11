@@ -1,6 +1,6 @@
 local M = {
   "stevearc/conform.nvim",
-  event = "VeryLazy",
+  event = "InsertEnter",
 
   -- Instead of `config`, use `opts` to extend conform's setup
   opts = {

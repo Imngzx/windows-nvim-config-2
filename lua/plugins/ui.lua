@@ -77,15 +77,6 @@ return {
     },
   },
 
-  --NOTE:nvim notify
-  {
-    "rcarriga/nvim-notify",
-    opts = {
-      timeout = 10000,
-    },
-  },
-
-
   --NOTE: bottom bar configure
   {
     "nvim-lualine/lualine.nvim",

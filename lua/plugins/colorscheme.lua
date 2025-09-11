@@ -7,7 +7,6 @@ return {
   --   transparent_background = false,
   --   term_colors = true,
   -- }
-  event = "VeryLazy",
 
 
   {
