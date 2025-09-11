@@ -95,7 +95,7 @@ return {
 
       -- ✅ Add your separators config
       opts.options = vim.tbl_deep_extend("force", opts.options or {}, {
-        section_separators = { left = "", right = "" }, --
+        section_separators = { left = "", right = "" }, --
       })
 
       -- keep pretty path
