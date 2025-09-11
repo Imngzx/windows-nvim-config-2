@@ -15,8 +15,9 @@ Also remember to install fd, ripgrep, luarocks, lua and xclip find via:
 - sudo dnf install
 - sudo apt install
 
-```sh
+Use this in powershell
 
-  git clone <https://github.com/Imngzx/linux-nvim-config.git> "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+```sh
+git clone https://github.com/Imngzx/windows-nvim-config-2.git "${env:LOCALAPPDATA}\nvim"
 
 ```
