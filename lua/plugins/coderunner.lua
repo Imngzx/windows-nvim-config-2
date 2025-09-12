@@ -36,7 +36,6 @@ return {
         },
         c = {
           "cd $dir && cl /utf-8 /nologo /O2 $fileName /Fe:$fileNameWithoutExt.exe && $fileNameWithoutExt.exe",
-
         },
         python = {
           "cd $dir &&",

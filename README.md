@@ -6,7 +6,7 @@ A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
 > [!CAUTION]
 > Remember to add these as root folders:
 
-- marksman.toml
+- .marksman.toml
 - pyrightconfig.json (activate venv first) , ruff.toml
 - compile_commands.json
 

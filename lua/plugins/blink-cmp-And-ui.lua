@@ -8,6 +8,7 @@ return {
     opts = {
       completion = {
         menu = {
+          -- scrollbar = false,
           border = "rounded",
           winhighlight = "Normal:BlinkCmpDoc,FloatBorder:BlinkCmpDocBorder,CursorLine:BlinkCmpDocCursorLine,Search:None",
           draw = {
