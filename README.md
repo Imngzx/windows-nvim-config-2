@@ -7,7 +7,7 @@ A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
 > Remember to add these as root folders:
 
 - .marksman.toml
-- pyrightconfig.json (activate venv first) , ruff.toml
+- basedpyrightconfig.json (activate venv first) , ruff.toml
 - compile_commands.json
 
 Also remember to install fd, ripgrep, luarocks, lua and xclip find via:
