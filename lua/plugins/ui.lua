@@ -2,7 +2,7 @@ return {
   --NOTE: configure nvim to load your desired colroschme
   {
     "LazyVim/LazyVim",
-    event = "VimEnter",
+    event = "VeryLazy",
     opts = {
       colorscheme = "tokyonight", -- changing this can change the colorscheme
     },

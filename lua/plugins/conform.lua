@@ -1,6 +1,6 @@
 local M = {
   "stevearc/conform.nvim",
-  event = "InsertEnter",
+  event = { "BufReadPost", "BufNewFile" },
 
   -- Instead of `config`, use `opts` to extend conform's setup
   opts = {
