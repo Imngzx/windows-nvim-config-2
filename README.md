@@ -21,3 +21,6 @@ Use this in powershell
 git clone https://github.com/Imngzx/windows-nvim-config-2.git "${env:LOCALAPPDATA}\nvim"
 
 ```
+
+> [!TIP]
+> leader u m for toggle md render, leader li for LspInfo

@@ -1,7 +1,10 @@
 -- Keymaps are automatically loaded on the VeryLazy event
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
---
+
+
+--this is for LspInfo
+vim.keymap.set("n", "<leader>li", "<cmd>LspInfo<CR>", { desc = "LSP Info" })
 
 local keymap = vim.keymap
 local opts = { noremap = true, silent = true }
@@ -59,7 +62,7 @@ keymap.set("n", "<C-w><up>", "<C-w>+")
 keymap.set("n", "<C-w><down>", "<C-w>-")
 
 --NOTE: NORMAL MODE FROM TERMNINAL
--- Works only in terminal mode (t)
+-- Works only in terminal mode (t) (for linux)
 vim.keymap.set("t", "<Esc>", function()
   -- if it's the 2nd press within 300ms, close terminal
   if vim.g.__last_esc and (vim.loop.hrtime() - vim.g.__last_esc) / 1e6 < 300 then

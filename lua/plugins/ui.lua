@@ -191,7 +191,10 @@ return {
       },
 
       dim = { enabled = true },
-      notifier = { enabled = true },
+      notifier = {
+        enabled = true,
+        timeout = 3500,
+      },
       indent = { enabled = true },
       quickfile = { enabled = true },
       scroll = {
