@@ -44,11 +44,11 @@ keymap.set("n", "<C-m>", "<C-i>", opts)
 
 -- New tab
 keymap.set("n", "te", ":tabedit")
-keymap.set("n", "<tab>", ":tabnext<Return>", opts)
-keymap.set("n", "<s-tab>", ":tabprev<Return>", opts)
+
 -- Split window
 keymap.set("n", "ss", ":split<Return>", opts)
 keymap.set("n", "sv", ":vsplit<Return>", opts)
+
 -- Move window
 keymap.set("n", "sh", "<C-w>h")
 keymap.set("n", "sk", "<C-w>k")
@@ -62,7 +62,8 @@ keymap.set("n", "<C-w><up>", "<C-w>+")
 keymap.set("n", "<C-w><down>", "<C-w>-")
 
 --NOTE: NORMAL MODE FROM TERMNINAL
--- Works only in terminal mode (t) (for linux)
+-- Works only in terminal mode (t) (for linux and winows)
+
 vim.keymap.set("t", "<Esc>", function()
   -- if it's the 2nd press within 300ms, close terminal
   if vim.g.__last_esc and (vim.loop.hrtime() - vim.g.__last_esc) / 1e6 < 300 then
