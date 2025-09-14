@@ -66,6 +66,7 @@ return {
           timeout_ms = nil,
         },
         -- LSP Server Settings
+        ---@module"lspconfig"
         ---@type lspconfig.options
         ---
         opts = {
@@ -86,7 +87,7 @@ return {
                   checkThirdParty = true,
                 },
                 codeLens = {
-                  enable = true,
+                  enable = true
                 },
                 completion = {
                   callSnippet = "Replace",
@@ -155,13 +156,16 @@ return {
               "--completion-style=detailed",
               "--function-arg-placeholders",
               "--fallback-style=llvm",
-              "--query-driver=/usr/bin/**/clang-*,/bin/clang,/bin/clang++,/usr/bin/gcc,/usr/bin/g++",
+              -- "--query-driver=/usr/bin/**/clang-*,/bin/clang,/bin/clang++,/usr/bin/gcc,/usr/bin/g++",
+              "--query-driver=C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/*/bin/Hostx64/x64/cl.exe",
             },
             init_options = {
               usePlaceholders = true,
               completeUnimported = true,
               clangdFileStatus = true,
-              fallbackFlags = { '--std=c++23' },
+              fallbackFlags = {
+                "--std=c++23",
+                "/EHsc" },
             },
           },
         },
