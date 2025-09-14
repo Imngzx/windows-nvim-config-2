@@ -11,7 +11,6 @@ end
 
 return {
   "CRAG666/code_runner.nvim",
-  -- event = "BufEnter",
   main = "code_runner",
   cmd = { "RunCode", "RunFile", "RunProject", "RunClose" },
   opts = function()

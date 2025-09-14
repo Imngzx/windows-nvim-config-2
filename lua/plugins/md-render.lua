@@ -10,11 +10,15 @@ return {
       heading = {
         sign = true,
         icons = {},
+        width = "block",
+        left_pad = 2,
+        right_pad = 4,
       },
       checkbox = {
         enabled = true,
       },
     },
+
     ft = { "markdown", "norg", "rmd", "org", "codecompanion" },
     config = function(_, opts)
       require("render-markdown").setup(opts)

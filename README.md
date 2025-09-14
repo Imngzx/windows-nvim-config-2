@@ -10,10 +10,9 @@ A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
 - pyrightconfig.json (activate venv first) , ruff.toml
 - compile_commands.json
 
-Also remember to install fd, ripgrep, luarocks, lua and xclip find via:
+Also remember to install fd, ripgrep, luarocks, lua and xclip
 
-- sudo dnf install
-- sudo apt install
+* choco install fd
 
 Use this in powershell
 
@@ -23,4 +22,4 @@ git clone https://github.com/Imngzx/windows-nvim-config-2.git "${env:LOCALAPPDAT
 ```
 
 > [!TIP]
-> leader u m for toggle md render, leader li for LspInfo
+> <leader> um for toggle md render, <leader> li for LspInfo

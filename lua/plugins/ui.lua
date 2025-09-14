@@ -2,7 +2,6 @@ return {
   --NOTE: configure nvim to load your desired colroschme
   {
     "LazyVim/LazyVim",
-    event = "VeryLazy",
     opts = {
       colorscheme = "tokyonight", -- changing this can change the colorscheme
     },
@@ -174,7 +173,7 @@ return {
   --NOTE: file, scrolling
   {
     "folke/snacks.nvim",
-    event = "VimEnter",
+    event = "VeryLazy",
     ---@module "snacks"
     ---@type snacks.Config
     opts = {
@@ -202,15 +201,15 @@ return {
         -- your scroll configuration comes here
         -- or leave it empty to use the default settings
         -- refer to the configuration section below
-        enabled = false,
+        enabled = true,
         animate = {
-          duration = { step = 15, total = 150 },
+          duration = { step = 15, total = 70 },
           easing = "linear",
           fps = 240,
         },
         animate_repeat = {
           delay = 50, -- delay in ms before using the repeat animation
-          duration = { step = 5, total = 150 },
+          duration = { step = 5, total = 70 },
           easing = "linear",
           fps = 240,
         },

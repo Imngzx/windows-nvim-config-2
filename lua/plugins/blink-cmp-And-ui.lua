@@ -8,7 +8,7 @@ return {
     opts = {
       sources = {
         -- add lazydev to your completion providers
-        default = { "lazydev", "lsp", "path", "buffer" },
+        default = { "lazydev", "lsp", "path", "buffer", "snippets" },
         providers = {
           lazydev = {
             name = "LazyDev",
