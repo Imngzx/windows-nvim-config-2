@@ -1,5 +1,5 @@
 return {
-  --NOTE: configure nvim to load your desired colroschme
+  --NOTE: configure nvim to load your desired colorschme
   {
     "LazyVim/LazyVim",
     opts = {
