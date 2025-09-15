@@ -208,7 +208,7 @@ return {
           fps = 240,
         },
         animate_repeat = {
-          delay = 50, -- delay in ms before using the repeat animation
+          delay = 100, -- delay in ms before using the repeat animation
           duration = { step = 5, total = 70 },
           easing = "linear",
           fps = 240,

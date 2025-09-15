@@ -3,6 +3,9 @@
 Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
 A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
 
+> [!NOTE]
+> This config only for windows, because MSVC powershell needed
+
 > [!CAUTION]
 > Remember to add these as root folders:
 
