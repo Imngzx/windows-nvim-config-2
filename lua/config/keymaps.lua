@@ -4,7 +4,8 @@
 
 
 --this is for LspInfo
-vim.keymap.set("n", "<leader>li", "<cmd>LspInfo<CR>", { desc = "LSP Info" })
+vim.keymap.set("n", "<leader>ai", "<cmd>LspInfo<CR>", { desc = "LSP Info" })
+vim.keymap.set("n", "<leader>ax", "<cmd>LazyExtras<CR>", { desc = "LazyExtras" })
 
 local keymap = vim.keymap
 local opts = { noremap = true, silent = true }
