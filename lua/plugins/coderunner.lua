@@ -1,11 +1,15 @@
-_G.RUNNER_FLOAT_MODE = true --NOTE: toggle here to switch between float or newtab mode
+_G.RUNNER_MODE = 1 --NOTE: 1 for float, 2 for tab, 3 for running in split term(only bottom split), only works after restart nvim
 
 -- helper function to get mode
 local function get_mode()
-  if RUNNER_FLOAT_MODE then
+  if RUNNER_MODE == 1 then
     return "float"
-  else
+  elseif RUNNER_MODE == 2 then
     return "tab"
+  elseif RUNNER_MODE == 3 then
+    return "term"
+  else
+    return "float"
   end
 end
 
@@ -15,10 +19,10 @@ return {
   cmd = { "RunCode", "RunFile", "RunProject", "RunClose" },
   opts = function()
     return {
-      mode = get_mode(), -- toggle mode
+      mode = get_mode(), -- toggle mode, options: tab, float , term
       focus = true,
       startinsert = true,
-      term = { position = "bot", size = 10 },
+      term = { position = "bot", size = 20 },
       float = {
         border = "rounded",
         height = 0.8,
@@ -51,13 +55,5 @@ return {
     { "<leader>rf", "<cmd>w<CR><cmd>RunFile<CR>", desc = "Save and Run File" },
     { "<leader>rp", "<cmd>RunProject<CR>",        desc = "Run Project" },
     { "<leader>rx", "<cmd>RunClose<CR>",          desc = "Close Runner" },
-    {
-      "<leader>rt",
-      function()
-        RUNNER_FLOAT_MODE = not RUNNER_FLOAT_MODE
-        vim.notify("Code Runner mode: " .. (RUNNER_FLOAT_MODE and "Float" or "Tab"), vim.log.levels.INFO)
-      end,
-      desc = "Toggle Runner Mode (Float/Tab)",
-    },
   },
 }
