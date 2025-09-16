@@ -2,7 +2,7 @@ return {
   "saghen/blink.cmp",
   event = "InsertEnter",
   dependencies = {
-    "rapan931/colorful-menu.nvim",
+    "xzbdmw/colorful-menu.nvim",
   },
   opts = {
     sources = {
