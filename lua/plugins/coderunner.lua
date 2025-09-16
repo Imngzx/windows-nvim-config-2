@@ -1,4 +1,5 @@
-_G.RUNNER_MODE = 1 --NOTE: 1 for float, 2 for tab, 3 for running in split term(only bottom split), only works after restart nvim
+--NOTE: 1 for float, 2 for tab, 3 for running in split term(only bottom split), only works after restart nvim
+_G.RUNNER_MODE = 1
 
 -- helper function to get mode
 local function get_mode()
