@@ -25,4 +25,4 @@ git clone https://github.com/Imngzx/windows-nvim-config-2.git "${env:LOCALAPPDAT
 ```
 
 > [!TIP]
-> <leader> um for toggle md render, <leader> li for LspInfo
+> <leader> um for toggle md render, <leader> a for my own custom keymaps
