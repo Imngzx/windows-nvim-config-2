@@ -17,7 +17,7 @@ return {
     },
     completion = {
       menu = {
-        scrollbar = false,
+        scrollbar = true,
         border = "rounded",
         winhighlight = "Normal:BlinkCmpDoc,FloatBorder:BlinkCmpDocBorder,CursorLine:BlinkCmpDocCursorLine,Search:None",
         draw = {
